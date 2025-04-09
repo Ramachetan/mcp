@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 from openai import AsyncOpenAI
 from mcp import ClientSession
 
-
 load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
@@ -22,9 +21,7 @@ client = AsyncOpenAI(
     base_url=BASE_URL,
 )
 
-
 MODEL_NAME = "gemini-2.0-flash"
-
 print(f"Using model: {MODEL_NAME}")
 
 
