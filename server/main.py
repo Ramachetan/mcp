@@ -9,12 +9,6 @@ mcp = FastMCP("company_directory")
 # Database setup
 DB_PATH = "server/company.db"
 
-# Import the init_db function from the new file
-from .db_initializer import init_db
-
-# Initialize database
-init_db()
-
 # Helper function for database queries
 def execute_query(query, params=()):
     """Execute a query and return the results."""

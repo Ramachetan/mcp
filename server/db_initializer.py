@@ -92,3 +92,5 @@ def init_db():
     conn.commit()
     conn.close()
     print(f"Database initialized at {DB_PATH}.")
+    
+    init_db()
